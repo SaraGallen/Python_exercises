@@ -1,0 +1,24 @@
+#Adivina el presonaje de Marvel.
+
+can_fly = input('Can fly?\n').lower()
+is_human = input('Is human?\n').lower()
+has_mask = input('Has mask?\n').lower()
+
+if can_fly == 'yes' and is_human == 'yes' and has_mask == 'yes':
+    print('It\'s Ironman!')
+elif can_fly == 'yes' and is_human == 'yes' and has_mask == 'no':
+    print('It\'s Captain Marvel!')
+elif can_fly == 'yes' and is_human == 'no' and has_mask == 'yes':
+    print('It\'s Ronan Accuser!')
+elif can_fly == 'yes' and is_human == 'no' and has_mask == 'no':
+    print('It\'s Vision!')
+elif can_fly == 'no' and is_human == 'yes' and has_mask == 'yes':
+    print('It\'s Spiderman!')
+elif can_fly == 'no' and is_human == 'yes' and has_mask == 'no':
+    print('It\'s Hulk!')
+elif can_fly == 'no' and is_human == 'no' and has_mask == 'yes':
+    print('It\'s Balck Bolt!')
+elif can_fly == 'no' and is_human == 'no' and has_mask == 'no':
+    print('It\'s Thanos!')
+else:
+    print('Answer yes or no')
